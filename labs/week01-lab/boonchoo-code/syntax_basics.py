@@ -77,7 +77,7 @@ print("a =", a, "b =", b, "c =", c)
 # Complete the following assignments:
 
 # String variable containing your favorite color
-favorite_color = 'Blue'
+favorite_color = "Blue"
 
 # Integer variable with the current year
 current_year = 2025
