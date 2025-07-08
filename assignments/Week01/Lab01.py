@@ -12,7 +12,7 @@ print("=== Personal Profile Creator ===")
 name = input("What is you name: ")
 age = int(input("How old are you: "))
 email = input("Enter you Email:")
-phone = input("Enter your phone number: ")
+phone = int(input("Enter your phone number: "))
 hobby = input("What is you favorite hobby: ")
 
 print("=== Your Profile ===")
