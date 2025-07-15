@@ -25,5 +25,5 @@ elif choose == 2:
     print(f"Amount Thai Baht:{convertusd: .2f} ")
     print(f"{usd} * 35.5")
 else :
-    print("Invaid number")
+    print("Invalid number")
     
