@@ -10,7 +10,7 @@ password = ""
 while len(password) < 8:
     password = input("Enter a password (at least 8 characters): ")
     if len(password) < 8:
-print("Password accepted!")
+        print("Password accepted!")
 
 
 # Example: Multiplication table
