@@ -24,9 +24,12 @@ if entered_pin == pin:
             else:
                 print("Your account has insufficient funds.")
         elif choice == 3:
-            deposit = int(input("nter the amount you want to Deposit: "))
-            balance = balance + deposit
-            print("Your balance is ",balance)
+            deposit = int(input("Enter the amount you want to Deposit: "))
+            if deposit > 0:
+                balance = balance + deposit
+                print("Your balance is ",balance)
+            else:
+                print("Invaild number")
         elif choice == 4:
             ("Thank you for using ")
             break
