@@ -14,7 +14,11 @@ print(f"Set (unique): {unique_numbers}")
 
 # Set from string
 char_set = set("hello")
+char_list = list("hello")
+char_tuple = tuple("hello")
 print(f"Characters in 'hello': {char_set}")
+print(f"Characters in 'hello': {char_list}")
+print(f"Characters in 'hello': {char_tuple}")
 
 # Set comprehension
 squares = {x**2 for x in range(1, 6)}
