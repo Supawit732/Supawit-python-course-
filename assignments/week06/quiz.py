@@ -1,4 +1,4 @@
-# Name: Supawit Leelachayakul 6730202459
+# Supawit Leelachayakul 6730202459
 """ เขียน function ชื่อ welcome_message ที่มีคุณสมบัติดังนี้:
 
 รับ parameter 2 ตัว คือ name และ course
