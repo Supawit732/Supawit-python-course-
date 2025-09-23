@@ -58,8 +58,39 @@ def get_divisibility_hint(number):
 
 def get_range_hint(number, current_min=1, current_max=100):
     # Return narrowed range around the number
-    pass
+    half = 12
+    low = max(current_min, number - half)
+    high = min(current_max, number + half)
+    return f"HINT: The number is between {low} and {high}"
+    
 
 def get_thefirst_digit_hint(number):
-    # Retun the first digit of the number
-    pass
+    result = str(number)
+    print(f"HINT: The first digit of the number is {result[0]}")
+    
+print("=== Enhanced GUESSING GAME ===")
+print("Guess my number between 1 and 100!")
+print("You have unlimited attempts.")   
+
+random_number = random.randint(1,100)
+attempt = 1
+while True:
+    User_number = int(input(f"Attempt {attempt} - Enter your guess:"))
+    if User_number == random_number:
+        print(f"Congratulations! You won in {attempt} attempts!")
+        break
+    elif User_number > random_number:
+        print("Too high! Try again.")
+    elif User_number < random_number:
+        print("Too low! Try again.")
+    if attempt == 3:
+        print(get_parity_hint(random_number))
+    elif attempt == 5:
+        print(get_divisibility_hint(random_number))
+    elif attempt == 7:
+        print(get_range_hint(random_number))
+    elif attempt == 10:
+        print(get_thefirst_digit_hint(random_number))
+        
+    attempt += 1
+    
